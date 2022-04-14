@@ -66,7 +66,7 @@
         <div id="content">
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
+                <div class="container-fluid1">
 
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fas fa-align-left"></i>
@@ -83,39 +83,58 @@
                     </div>
                 </div>
             </nav>
+            <center>
             <h3> Contact page </h2>
+            
                 </br>
                 <div class="images">
-                    <img class="myImages" id="myImg" src="images/Contact.png" alt="Contact"
+                    <img src="images/Contact.png" alt="Contact"
                         style="width:800px;height:400px;" class="shadow p-3 mb-5 bg-white rounded"
                         class="img-thumbnail">
                 </div>
-                <h2>contact info</h2>
-                <p>Phone: (01) 7495 4802</p>
-                <p>Email: Mchughscoffeepod@gmail.com</p>
+                <h2>Our Contact Info</h2>
+                <h3>Phone: (01) 7495 4802</h3>
+                <h3>Email: Mchughscoffeepod@gmail.com</h3>
 
-                <div class="line"></div>
+                
+                <form name="form" method="post" action="mailto:x20448246@student.ncirl.ie" >
 
-                <h1>book us below</h1>
-                <label> Name: </label>
-                <input name="Name" type="text" size="30" maxlength="25" />
-                <br />
-                <label> Email: </label>
-                <input email="email" type="text" size="50" maxlength="50" />
-                <br />
-                <label> Enter booking information </label>
-                <br />
-                <textarea name="comments" rows="10" cols="80">
-				</textarea>
-                <br />
-                <input type="submit" Value="submit">
-
-                <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption"></div>
-                </div>
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <input type="text" id="name" name="firstname" placeholder="Enter your name">
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <input type="text" id="email" name="email" placeholder="Enter your email">
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <select class="choice" name="Subject">
+                    <option value="General">Geaneral</option>
+                    <option value="Complaint">Complain</option>
+                    <option value="Review">Review</option>
+                  </select>
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <textarea class="comment" name="Message" placeholder="Comment" style="height:100px"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="line">
+                        <input type="submit" class="hover" value="Submit">
+                    </div>
+                
+                </form>
+            </div>
         </div>
+    </center>
 
 
 
@@ -172,6 +191,27 @@
                 modal.style.display = "none";
             }
         </script>
+        
+        <footer >
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="line">
+                        <hr/>
+                    </div>
+                    <div class="col-12">Sitemap</div>
+                    <div class="col-12"><a  href="index.html">Home</a></div>
+                    <div class="col-12"><a  href="contactInfo.html">Contact</a></div>
+                    <div class="col-12"><a  href="location.html">Location</a></div>
+                    <div class="col-12"><a  href="shop.html">Shop</a></div>
+                    <div class="col-12"><a  href="about.html">About</a></div>
+                    <div class="col-12">© Group 5</div>
+                    <div class="line">
+                        <hr/>
+                    </div>
+                </div>
+            </div>
+        </footer>
+  
         <!--- all imagess from https://unsplash.com/ this is the javascript to be able to toggole the side bar --->
 </body>
 

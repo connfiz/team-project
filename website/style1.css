@@ -13,6 +13,14 @@ p {
     line-height: 1.7em;
     color: #999;
 }
+h1,h2{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+}
+
 
 a,
 a:hover,
@@ -178,26 +186,27 @@ body {
    font-weight: bold;
      color:black ;
        }
-.container-fluid{background-image:url("background.png");
-           }
+
            /*-----------------------------------------------------
            imagesbackground image from https://coolbackgrounds.io/white-background/
            -------------------------------------------------------*/
   .shopfront{
     text-align: center;
      }
-     .images{
-       text-align: center;
-     }
-      .coffe beans {
-          text-align: center;
-      }
+     .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+
       /*-----------------------------------------------------
       text miniplation
       -------------------------------------------------------*/
       li{
       color:#000000;}
-      <style>
+      
 body {font-family: Arial, Helvetica, sans-serif;}
 /*-----------------------------------------------------
 image expansion https://stackoverflow.com/questions/47798971/several-modal-images-on-page
@@ -290,7 +299,7 @@ image expansion https://stackoverflow.com/questions/47798971/several-modal-image
     width: 100%;
   }
 }
-}
+
 .question{
 	font-weight: 600;
 }
@@ -311,7 +320,16 @@ image expansion https://stackoverflow.com/questions/47798971/several-modal-image
 	cursor: pointer;
 	margin-bottom: 20px;
 }
+.container-fluid {
+  background-color: #000000;
+  padding: 15px;
+  text-align: center;
+  color: #ddd;
+  font-size: 15px;
+}
+
+
 #submit:hover{
 	background-color: #38a;
 }
-icon
+
