@@ -13,6 +13,14 @@ p {
     line-height: 1.7em;
     color: #999;
 }
+h1,h2{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+}
+
 
 a,
 a:hover,
@@ -178,26 +186,27 @@ body {
    font-weight: bold;
      color:black ;
        }
-.container-fluid{background-image:url("background.png");
-           }
+
            /*-----------------------------------------------------
            imagesbackground image from https://coolbackgrounds.io/white-background/
            -------------------------------------------------------*/
   .shopfront{
     text-align: center;
      }
-     .images{
-       text-align: center;
-     }
-      .coffe beans {
-          text-align: center;
-      }
+     .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+
       /*-----------------------------------------------------
       text miniplation
       -------------------------------------------------------*/
       li{
       color:#000000;}
-      <style>
+      
 body {font-family: Arial, Helvetica, sans-serif;}
 /*-----------------------------------------------------
 image expansion https://stackoverflow.com/questions/47798971/several-modal-images-on-page
@@ -268,6 +277,10 @@ image expansion https://stackoverflow.com/questions/47798971/several-modal-image
   }
 }
 
+.red{
+color: red;
+}
+
 .close {
   position: absolute;
   top: 15px;
@@ -290,7 +303,7 @@ image expansion https://stackoverflow.com/questions/47798971/several-modal-image
     width: 100%;
   }
 }
-}
+
 .question{
 	font-weight: 600;
 }
@@ -311,7 +324,125 @@ image expansion https://stackoverflow.com/questions/47798971/several-modal-image
 	cursor: pointer;
 	margin-bottom: 20px;
 }
+.container-fluid {
+  background-color: #217e5e;
+  padding: 15px;
+  text-align: center;
+  color: #ddd;
+  font-size: 15px;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+  
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
 #submit:hover{
 	background-color: #38a;
 }
-icon
+
+.choice {
+  border: none;
+  color: green;
+  background-color: black;
+}
+
+.comment {
+  border: none;
+  color: green;
+  background-color: black;
+}
+
+option {
+  background-color: #ffffff
+}
+
+#name {
+  border: none;
+  color: green;
+  background-color: black;
+}
+
+#email {
+  border: none;
+  color: green;
+  background-color: black;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  color: #ff7d5b !important;
+}
+.col-xl-12 {
+  
+  padding: 5px;
+  opacity: .9;
+  font-size: 18px;
+}
+
+hr {
+  border: 0;
+  opacity: 0.5;
+  display: block;
+  width: 100%;
+  background-color: #ffffff;
+  height: 1px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 75%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #1c191a;
+  color: #FFFAFA;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hover:hover {
+  background: #ff7d5b;
+  outline: none;
+  box-shadow: 0 4px black;
+}
