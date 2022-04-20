@@ -3,6 +3,7 @@
 <html>
 
 <head>
+    <title>Our Locations</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +17,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -37,7 +38,7 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="shop.html">Shop</a>
+                    <a href="index.php">Shop</a>
                 </li>
 
 
@@ -46,10 +47,7 @@
                     <a href="about.html">About</a>
                 </li>
                 <li>
-                    <a href="#pageSubmenu">Locations</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-
-                    </ul>
+                    <a href="location.html">Locations</a>
                 </li>
 
                 <li>
@@ -82,11 +80,11 @@
             </nav>
 
             <div class="shopfront">
-                <img class="myImages" id="myImg" src="images/shopfront.png" alt="shopfront"
+                <img class="myImages" id="myImg" src="imgs/shopfront.png" alt="Our Shopfront"
                     style="width:800px;height:400px;" class="shadow p-3 mb-5 bg-white rounded" class="img-thumbnail">
 
             </div>
-            
+
             <h1> How to find us </h1>
             </br>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -96,90 +94,133 @@
                 deserunt mollit anim id est laborum.</p>
             </br>
 
-            
-                    
-                    <h2> Calander </h2>
-                    <p> This is where our calander will be </p>
-                    <img class="center" id="myImg" src="images/calander.png" alt="calander "
-                        style="width:500px;height:250px;" class="shadow p-3 mb-5 bg-white rounded" class="img-thumbnail"
-                        ,>
-                    
-                
-                    
-                    <h2> Our Location on Google Maps </h2>
-                    <p> This is where the google map location will show up after selcting date this will be done using
-                        iframes and a custom api </p>
-                        <img class="center" id="myImg" src="images/map.png" alt="map" style="width:500px;height:250px;"
-                        class="shadow p-3 mb-5 bg-white rounded" class="img-thumbnail" ,>
+
+
+            <h2> Calander </h2>
+            <p> This is where our calander will be </p>
+            <img class="center" id="myImg" src="imgs/calander.png" alt="calander " style="width:500px;height:250px;"
+                class="shadow p-3 mb-5 bg-white rounded" class="img-thumbnail" ,>
+
+
+
+            <h2> Our Location on Google Maps </h2>
+            <p> This is where the google map location will show up after selcting date this will be done using
+                iframes and a custom api </p>
+
+            <!--Image Found https://traveldave.co.uk/visit-dublin-autumn/-->
+            <div class="container">
+                <h2>Dublin</h2>
+                <img src="imgs/Dublin.png" alt="Dublin">
+                <form method="get" action="dublin.html">
+                    <button type="submit"class="btn">Click Here</button>
+                </form>
+            </div>
+            <!--Image Found https://gastrogays.com/cross-guns-meath/-->
+            <div class="container">
+                <h2>Meath</h2>
+                <img src="imgs/meath.png" alt="Meath">
+                <form method="get" action="meath.html">
+                    <button type="submit"class="btn">Click Here</button>
+                </form>
+            </div>
+            <!--Image Found https://www.delicious.com.au/travel/international/article/only-guide-corks-food-scene-you-need-read/72eknxtx-->
+            <div class="container">
+                <h2>Cork</h2>
+                <img src="imgs/cork.png" alt="Cork">
+                <form method="get" action="cork.html">
+                    <button type="submit"class="btn">Click Here</button>
+                </form>
+            </div>
+            <!--Image Found https://foodandwine.ie/what-to-eat-in-bray-->
+            <div class="container">
+                <h2>Bray</h2>
+                <img src="imgs/bray.png" alt="Bray">
+                <form method="get" action="bray.html">
+                    <button type="submit"class="btn">Click Here</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <!--- code from https://bootstrapious.com/p/bootstrap-sidebar --->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <!--- code from https://bootstrapious.com/p/bootstrap-sidebar --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <!--- code from https://bootstrapious.com/p/bootstrap-sidebar --->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <!--- code from https://bootstrapious.com/p/bootstrap-sidebar --->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!--- code from https://bootstrapious.com/p/bootstrap-sidebar --->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+        // create references to the modal...<!--- https://stackoverflow.com/questions/47798971/several-modal-images-on-page --->
+        var modal = document.getElementById('myModal');
+        // to all images -- note I'm using a class!
+        var images = document.getElementsByClassName('myImages');
+        // the image in the modal
+        var modalImg = document.getElementById("img01");
+        // and the caption in the modal
+        var captionText = document.getElementById("caption");
+
+        // Go through all of the images with our custom class
+        for (var i = 0; i < images.length; i++) {
+            var img = images[i];
+            // and attach our click listener for this image.
+            img.onclick = function (evt) {
+                console.log(evt);
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    </script>
+    <!--- all imagess from https://unsplash.com/ this is the javascript to be able to toggole the side bar --->
+    <footer >
+        <div class="container-fluid">
+            <div class="row">
+                <div class="line">
+                    <hr/>
                 </div>
-            
-                
-
-
-                    
-
-                    <div id="myModal" class="modal">
-                        <span class="close">&times;</span>
-                        <img class="modal-content" id="img01">
-                        <div id="caption"></div>
-                    </div>
+                <div class="col-12">Sitemap</div>
+                <div class="col-12"><a  href="index.html">Home</a></div>
+                <div class="col-12"><a  href="contactInfo.html">Contact</a></div>
+                <div class="col-12"><a  href="location.html">Location</a></div>
+                <div class="col-12"><a  href="index.php">Shop</a></div>
+                <div class="col-12"><a  href="about.html">About</a></div>
+                <div class="col-12">© Group 5</div>
+                <div class="line">
+                    <hr/>
                 </div>
-
-                <!-- jQuery CDN - Slim version (=without AJAX) -->
-                <!--- code from https://bootstrapious.com/p/bootstrap-sidebar --->
-                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                    crossorigin="anonymous"></script>
-                <!-- Popper.JS -->
-                <!--- code from https://bootstrapious.com/p/bootstrap-sidebar --->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
-                    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-                    crossorigin="anonymous"></script>
-                <!-- Bootstrap JS -->
-                <!--- code from https://bootstrapious.com/p/bootstrap-sidebar --->
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
-                    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-                    crossorigin="anonymous"></script>
-                <!-- jQuery Custom Scroller CDN -->
-                <!--- code from https://bootstrapious.com/p/bootstrap-sidebar --->
-                <script
-                    src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-                <!--- code from https://bootstrapious.com/p/bootstrap-sidebar --->
-                <script type="text/javascript">
-                    $(document).ready(function () {
-                        $('#sidebarCollapse').on('click', function () {
-                            $('#sidebar').toggleClass('active');
-                        });
-                    });
-                    // create references to the modal...<!--- https://stackoverflow.com/questions/47798971/several-modal-images-on-page --->
-                    var modal = document.getElementById('myModal');
-                    // to all images -- note I'm using a class!
-                    var images = document.getElementsByClassName('myImages');
-                    // the image in the modal
-                    var modalImg = document.getElementById("img01");
-                    // and the caption in the modal
-                    var captionText = document.getElementById("caption");
-
-                    // Go through all of the images with our custom class
-                    for (var i = 0; i < images.length; i++) {
-                        var img = images[i];
-                        // and attach our click listener for this image.
-                        img.onclick = function (evt) {
-                            console.log(evt);
-                            modal.style.display = "block";
-                            modalImg.src = this.src;
-                            captionText.innerHTML = this.alt;
-                        }
-                    }
-
-                    var span = document.getElementsByClassName("close")[0];
-
-                    span.onclick = function () {
-                        modal.style.display = "none";
-                    }
-                </script>
-                <!--- all imagess from https://unsplash.com/ this is the javascript to be able to toggole the side bar --->
- 
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

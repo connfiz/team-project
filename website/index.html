@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<!---code done by conn fitzgerald--->
 <html>
 
 <head>
+  <title>McHugh's Coffee Pod</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="icon" href="logo.png">
-  <script type="text/javascript">
-    prompt("sign up for our news letter", "enter email exsample@exsample.com");
-  </script>
+
 
 
 
@@ -18,12 +16,11 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
     integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="wrapper">
-    <!-- Sidebar  -->
     <!-- Sidebar  -->
     <!--- code from https://bootstrapious.com/p/bootstrap-sidebar this is to name the diffrent tabs in the side bar and to add the logo  --->
     <nav id="sidebar">
@@ -40,7 +37,7 @@
           <a href="index.html">Home</a>
         </li>
         <li>
-          <a href="shop.html">Shop</a>
+          <a href="index.php">Shop</a>
         </li>
 
 
@@ -63,7 +60,6 @@
     </nav>
 
     <!-- Page Content  -->
-    <!--- code from https://bootstrapious.com/p/bootstrap-sidebar --->
     <!--- code from https://bootstrapious.com/p/bootstrap-sidebar  this is to be able to toggle the side bar  --->
     <div id="content">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -85,11 +81,29 @@
         </div>
       </nav>
       </nav>
+      <!--Example used to create our newsletter pop uphttps://www.w3schools.com/js/js_popup.asp !-->
+      <h1>Sign Up To Our Newsletter</h1>
 
+      <button class="center" onclick="myFunction()">Newsletter</button>
+
+      <p id="demo"></p>
+
+      <script>
+      function myFunction() {
+        let text;
+        let person = prompt("Please enter your email address:", "");
+        if (person == null || person == "") {
+          text = "You have requested not to join the newsletter.";
+        } else {
+          text = "Congratulations " + person + "! You are now part of our newsletter";
+        }
+        document.getElementById("demo").innerHTML = text;
+      }
+      </script>
       <h1>McHugh's Coffee Pod </h1>
 
         <div class="shopfront">
-          <img class="myImages" id="myImg" src="images/shopfront.png" alt="shopfront" style="width:800px;height:400px;"
+          <img class="myimgs" id="myImg" src="imgs/shopfront.png" alt="shopfront" style="width:800px;height:400px;"
             class="shadow p-3 mb-5 bg-white rounded" class="img-thumbnail">
 
         </div>
@@ -104,8 +118,8 @@
         </br>
 
         </br>
-        <div class="images">
-          <img class="center" id="myImg" src="images/coloumbia beans.png" alt="coffe beans "
+        <div class="imgs">
+          <img class="center" id="myImg" src="imgs/coloumbia beans.png" alt="coffe beans "
             style="width:800px;height:400px;" class="shadow p-3 mb-5 bg-white rounded" class="img-thumbnail" ,>
         </div>
         </br>
@@ -122,8 +136,8 @@
           id est laborum.</p>
         <div class="line"></div>
         </br>
-        <div class="images">
-          <img class="center" id="myImg" src="images/mission.png" alt="community" style="width:800px;height:400px;"
+        <div class="imgs">
+          <img class="center" id="myImg" src="imgs/mission.png" alt="community" style="width:800px;height:400px;"
             class="shadow p-3 mb-5 bg-white rounded" class="img-thumbnail">
         </div>
         </br>
@@ -138,10 +152,10 @@
           commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
           nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
           id est laborum.</p>
-        
+
         <div class="line"></div>
         <div id="myModal" class="modal">
-          <!--- code from https://stackoverflow.com/questions/47798971/several-modal-images-on-page --->
+          <!--- code from https://stackoverflow.com/questions/47798971/several-modal-imgs-on-page --->
           <span class="close">&times;</span>
           <img class="modal-content" id="img01">
           <div id="caption"></div>
@@ -175,18 +189,18 @@
         $('#sidebar').toggleClass('active');
       });
     });
-    // create references to the modal...<!--- https://stackoverflow.com/questions/47798971/several-modal-images-on-page --->
+    // create references to the modal...<!--- https://stackoverflow.com/questions/47798971/several-modal-imgs-on-page --->
     var modal = document.getElementById('myModal');
-    // to all images -- note I'm using a class!
-    var images = document.getElementsByClassName('myImages');
+    // to all imgs -- note I'm using a class!
+    var imgs = document.getElementsByClassName('myimgs');
     // the image in the modal
     var modalImg = document.getElementById("img01");
     // and the caption in the modal
     var captionText = document.getElementById("caption");
 
-    // Go through all of the images with our custom class
-    for (var i = 0; i < images.length; i++) {
-      var img = images[i];
+    // Go through all of the imgs with our custom class
+    for (var i = 0; i < imgs.length; i++) {
+      var img = imgs[i];
       // and attach our click listener for this image.
       img.onclick = function (evt) {
         console.log(evt);
@@ -202,9 +216,9 @@
       modal.style.display = "none";
     }
   </script>
-  <!--- all imagess from https://unsplash.com/ this is the javascript to be able to toggole the side bar --->
+  <!--- all imgss from https://unsplash.com/ this is the javascript to be able to toggole the side bar --->
 
-  <!--- all imagess from https://unsplash.com/ --->
+  <!--- all imgss from https://unsplash.com/ --->
   <footer >
     <div class="container-fluid">
         <div class="row">

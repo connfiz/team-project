@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="shop.html">Shop</a>
+                    <a href="index.php">Shop</a>
                 </li>
 
 
@@ -85,10 +85,10 @@
             </nav>
             <center>
             <h3> Contact page </h2>
-            
+
                 </br>
-                <div class="images">
-                    <img src="images/Contact.png" alt="Contact"
+                <div class="imgs">
+                    <img src="imgs/Contact.png" alt="Contact"
                         style="width:800px;height:400px;" class="shadow p-3 mb-5 bg-white rounded"
                         class="img-thumbnail">
                 </div>
@@ -96,7 +96,7 @@
                 <h3>Phone: (01) 7495 4802</h3>
                 <h3>Email: Mchughscoffeepod@gmail.com</h3>
 
-                
+
                 <form name="form" method="post" action="mailto:x20448246@student.ncirl.ie" >
 
                     <div class="row">
@@ -104,13 +104,13 @@
                             <input type="text" id="name" name="firstname" placeholder="Enter your name">
                         </div>
                     </div>
-        
+
                     <div class="row">
                         <div class="col-xl-12">
                             <input type="text" id="email" name="email" placeholder="Enter your email">
                         </div>
                     </div>
-        
+
                     <div class="row">
                         <div class="col-xl-12">
                             <select class="choice" name="Subject">
@@ -120,17 +120,17 @@
                   </select>
                         </div>
                     </div>
-        
+
                     <div class="row">
                         <div class="col-xl-12">
                             <textarea class="comment" name="Message" placeholder="Comment" style="height:100px"></textarea>
                         </div>
                     </div>
-                    
+
                     <div class="line">
                         <input type="submit" class="hover" value="Submit">
                     </div>
-                
+
                 </form>
             </div>
         </div>
@@ -164,18 +164,18 @@
                     $('#sidebar').toggleClass('active');
                 });
             });
-            // create references to the modal...<!--- https://stackoverflow.com/questions/47798971/several-modal-images-on-page --->
+            // create references to the modal...<!--- https://stackoverflow.com/questions/47798971/several-modal-imgs-on-page --->
             var modal = document.getElementById('myModal');
-            // to all images -- note I'm using a class!
-            var images = document.getElementsByClassName('myImages');
+            // to all imgs -- note I'm using a class!
+            var imgs = document.getElementsByClassName('myimgs');
             // the image in the modal
             var modalImg = document.getElementById("img01");
             // and the caption in the modal
             var captionText = document.getElementById("caption");
 
-            // Go through all of the images with our custom class
-            for (var i = 0; i < images.length; i++) {
-                var img = images[i];
+            // Go through all of the imgs with our custom class
+            for (var i = 0; i < imgs.length; i++) {
+                var img = imgs[i];
                 // and attach our click listener for this image.
                 img.onclick = function (evt) {
                     console.log(evt);
@@ -191,7 +191,7 @@
                 modal.style.display = "none";
             }
         </script>
-        
+
         <footer >
             <div class="container-fluid">
                 <div class="row">
@@ -202,7 +202,7 @@
                     <div class="col-12"><a  href="index.html">Home</a></div>
                     <div class="col-12"><a  href="contactInfo.html">Contact</a></div>
                     <div class="col-12"><a  href="location.html">Location</a></div>
-                    <div class="col-12"><a  href="shop.html">Shop</a></div>
+                    <div class="col-12"><a  href="index.php">Shop</a></div>
                     <div class="col-12"><a  href="about.html">About</a></div>
                     <div class="col-12">© Group 5</div>
                     <div class="line">
@@ -211,8 +211,8 @@
                 </div>
             </div>
         </footer>
-  
-        <!--- all imagess from https://unsplash.com/ this is the javascript to be able to toggole the side bar --->
+
+        <!--- all imgss from https://unsplash.com/ this is the javascript to be able to toggole the side bar --->
 </body>
 
 </html>

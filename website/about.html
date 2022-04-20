@@ -1,53 +1,49 @@
 <!DOCTYPE html>
-<!---code done by conn fitzgerald--->
 <html>
 
 <head>
+    <title>About Us</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="logo.png">
-
-
-
 
     <!-- Bootstrap CSS CDN -->
     <!--- code from https://bootstrapious.com/p/bootstrap-sidebar --->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <!-- Sidebar  -->
         <!-- Sidebar  -->
         <!--- code from https://bootstrapious.com/p/bootstrap-sidebar this is to name the diffrent tabs in the side bar and to add the logo  --->
         <nav id="sidebar">
             <div class="sidebarlogo">
                 <img src="logo.png" alt="logo">
             </div>
+
             <div class="sidebar-header">
                 <h3>McHugh's Coffee Pod</h3>
             </div>
-            <ul class="list-unstyled components">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="shop.html">Shop</a>
-            </li>
-            <li>
-                <a href="about.html">About</a>
-            </li>
-            <li>
-                <a href="location.html">Locations</a>
 
-            </li>
-            <li>
-                <a href="contactInfo.html">Contact</a>
-            </li>
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.php">Shop</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="location.html">Locations</a>
+
+                </li>
+                <li>
+                    <a href="contactInfo.html">Contact</a>
+                </li>
 
             </ul>
 
@@ -55,7 +51,6 @@
         </nav>
 
         <!-- Page Content  -->
-        <!--- code from https://bootstrapious.com/p/bootstrap-sidebar --->
         <!--- code from https://bootstrapious.com/p/bootstrap-sidebar  this is to be able to toggle the side bar  --->
         <div id="content">
 
@@ -71,18 +66,14 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
                     </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                    </div>
                 </div>
             </nav>
-           
+
             <h1>About Us </h1>
-            
+
             <div class="row">
                 <div class="col-md-6">
-                    <img class="myImages" id="myImg" src="images/shopfront.png" alt="coffe beans "
+                    <img class="myImages" id="myImg" src="imgs/shopfront.png" alt="Our Home, Here is an example of how we run our business. "
                         style="width:800px;height:400px;" class="shadow p-3 mb-5 bg-white rounded" class="img-thumbnail"
                         ,>
                     <h2> Our home </h2>
@@ -94,7 +85,7 @@
                 </div>
                 <div class="col-md-6">
 
-                    <img class="myImages" id="myImg" src="images/1959.png" alt="coffe beans "
+                    <img class="myImages" id="myImg" src="imgs/1959.png" alt="Here are the founders of McHugh's "
                         style="width:800px;height:400px;" class="shadow p-3 mb-5 bg-white rounded" class="img-thumbnail"
                         ,>
                     <h2> EST.1959 </h2>
@@ -105,12 +96,9 @@
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
 
-
-                <div class="line"></div>
-
                 <div class="row">
                     <div class="col-md-6">
-                        <img class="myImages" id="myImg" src="images/coloumbia beans.png" alt="coffe beans "
+                        <img class="myImages" id="myImg" src="imgs/coloumbia beans.png" alt="Example of some of our coffee beans "
                             style="width:800px;height:400px;" class="shadow p-3 mb-5 bg-white rounded"
                             class="img-thumbnail" ,>
                         <h2> The Coffee Pod </h2>
@@ -122,7 +110,7 @@
                     </div>
                     <div class="col-md-6">
 
-                        <img class="myImages" id="myImg" src="images/our cooking book.png" alt="coffe beans "
+                        <img class="myImages" id="myImg" src="imgs/our cooking book.png" alt="We pay great attention to our customers review's "
                             style="width:800px;height:400px;" class="shadow p-3 mb-5 bg-white rounded"
                             class="img-thumbnail" ,>
                         <h2> Our Reviews</h2>
@@ -191,9 +179,27 @@
                         modal.style.display = "none";
                     }
                 </script>
-                <!--- code from https://bootstrapious.com/p/bootstrap-sidebar --->
-                <!--- all imagess from https://unsplash.com/ this is the javascript to be able to toggole the side bar --->
 
+                <!--- all imagess from https://unsplash.com/ --->
+                <footer >
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="line">
+                                <hr/>
+                            </div>
+                            <div class="col-12">Sitemap</div>
+                            <div class="col-12"><a  href="index.html">Home</a></div>
+                            <div class="col-12"><a  href="contactInfo.html">Contact</a></div>
+                            <div class="col-12"><a  href="location.html">Location</a></div>
+                            <div class="col-12"><a  href="index.php">Shop</a></div>
+                            <div class="col-12"><a  href="about.html">About</a></div>
+                            <div class="col-12">© Group 5</div>
+                            <div class="line">
+                                <hr/>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
 </body>
 
 </html>
