@@ -1,3 +1,4 @@
+<!-- code for cart system from https://codeshack.io/shopping-cart-system-php-mysql/ -->
 <?php
 // If the user clicked the add to cart button on the product page we can check for the form data
 if (isset($_POST['product_id'], $_POST['quantity']) && is_numeric($_POST['product_id']) && is_numeric($_POST['quantity'])) {

@@ -1,3 +1,4 @@
+<!-- code for cart system from https://codeshack.io/shopping-cart-system-php-mysql/ -->
 <?php
 session_start();
 // Include functions and connect to the database using PDO MySQL
