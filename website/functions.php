@@ -1,4 +1,4 @@
-<!-- code for cart system from https://codeshack.io/shopping-cart-system-php-mysql/ -->
+<!-- guide for cart system from https://codeshack.io/shopping-cart-system-php-mysql/ -->
 <?php
 function pdo_connect_mysql() {
     // Update the details below with your MySQL details

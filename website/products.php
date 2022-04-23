@@ -1,4 +1,4 @@
-<!-- code for cart system from https://codeshack.io/shopping-cart-system-php-mysql/ -->
+<!-- guide for cart system from https://codeshack.io/shopping-cart-system-php-mysql/ -->
 <?php
 // The amounts of products to show on each page
 $num_products_on_each_page = 4;
