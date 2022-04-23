@@ -1,4 +1,4 @@
-<!-- code for cart system from https://codeshack.io/shopping-cart-system-php-mysql/ -->
+<!-- guide for cart system from https://codeshack.io/shopping-cart-system-php-mysql/ -->
 <?php
 // Get the 4 most recently added products
 $stmt = $pdo->prepare('SELECT * FROM products ORDER BY date_added DESC LIMIT 4');
