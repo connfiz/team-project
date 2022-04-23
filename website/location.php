@@ -1,22 +1,89 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
-<!---code done by conn fitzgerald--->
 <html>
+<?php
+
+date_default_timezone_set('Dublin/London');
+if (isset($_GET['ym'])) {
+    $ym = $_GET['ym'];
+} else {
+    // This month
+    $ym = date('Y-m');
+}
+
+$timestamp = strtotime($ym . '-01');
+if ($timestamp === false) {
+    $ym = date('Y-m');
+    $timestamp = strtotime($ym . '-01');
+}
+
+$today = date('Y-m-j', time());
+
+$html_title = date('Y / m', $timestamp);
+
+// Create prev & next month link     mktime(hour,minute,second,month,day,year)
+$prev = date('Y-m', mktime(0, 0, 0, date('m', $timestamp)-1, 1, date('Y', $timestamp)));
+$next = date('Y-m', mktime(0, 0, 0, date('m', $timestamp)+1, 1, date('Y', $timestamp)));
+// You can also use strtotime!
+// $prev = date('Y-m', strtotime('-1 month', $timestamp));
+// $next = date('Y-m', strtotime('+1 month', $timestamp));
+
+// Number of days in the month
+$day_count = date('t', $timestamp);
+ 
+// 0:Sun 1:Mon 2:Tue ...
+$str = date('w', mktime(0, 0, 0, date('m', $timestamp), 1, date('Y', $timestamp)));
+//$str = date('w', $timestamp);
+
+
+// Create Calendar!!
+$weeks = array();
+$week = '';
+
+// Add empty cell
+$week .= str_repeat('<td></td>', $str);
+
+for ( $day = 1; $day <= $day_count; $day++, $str++) {
+
+     
+    $date = $ym . '-' . $day;
+     
+    if ($today == $date) {
+        $week .= '<td class="today">' . $day;
+    } else {
+        $week .= '<td>' . $day;
+    }
+    $week .= '</td>';
+     
+    // End of the week OR End of the month
+    if ($str % 7 == 6 || $day == $day_count) {
+
+        if ($day == $day_count) {
+            // Add empty cell
+            $week .= str_repeat('<td></td>', 6 - ($str % 7));
+        }
+
+        $weeks[] = '<tr>' . $week . '</tr>';
+
+        // Prepare for new week
+        $week = '';
+    }
+}
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---code done by conn fitzgerald--->
+
 
 <head>
     <meta charset="utf-8">
@@ -273,5 +340,5 @@
                 </script>
                 <!--- all imagess from https://unsplash.com/ this is the javascript to be able to toggole the side bar --->
 </body>
-
 </html>
+

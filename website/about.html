@@ -1,49 +1,56 @@
 <!DOCTYPE html>
+<!---code done by conn fitzgerald--->
 <html>
 
 <head>
-    <title>About Us</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="logo.png">
+
+
+
 
     <!-- Bootstrap CSS CDN -->
     <!--- code from https://bootstrapious.com/p/bootstrap-sidebar --->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
         integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style1.css">
 </head>
 
 <body>
     <div class="wrapper">
+        <!-- Sidebar  -->
         <!-- Sidebar  -->
         <!--- code from https://bootstrapious.com/p/bootstrap-sidebar this is to name the diffrent tabs in the side bar and to add the logo  --->
         <nav id="sidebar">
             <div class="sidebarlogo">
                 <img src="logo.png" alt="logo">
             </div>
-
             <div class="sidebar-header">
                 <h3>McHugh's Coffee Pod</h3>
             </div>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="shop.html">Shop</a>
+            </li>
 
-            <ul class="list-unstyled components">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="index.php">Shop</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="location.html">Locations</a>
 
-                </li>
-                <li>
-                    <a href="contactInfo.html">Contact</a>
-                </li>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="location.html">Locations</a>
+
+            </li>
+
+            <li>
+                <a href="contactInfo.html">Contact</a>
+            </li>
 
             </ul>
 
@@ -51,11 +58,12 @@
         </nav>
 
         <!-- Page Content  -->
+        <!--- code from https://bootstrapious.com/p/bootstrap-sidebar --->
         <!--- code from https://bootstrapious.com/p/bootstrap-sidebar  this is to be able to toggle the side bar  --->
         <div id="content">
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid1">
+                <div class="container-fluid">
 
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fas fa-align-left"></i>
@@ -66,17 +74,20 @@
                         aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
                     </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    </div>
                 </div>
             </nav>
 
-            <h1>About Us </h1>
-
+            <h2>about us </h2>
             <div class="row">
                 <div class="col-md-6">
-                    <img class="myImages" id="myImg" src="imgs/shopfront.png" alt="Our Home, Here is an example of how we run our business. "
+                    <img class="myImages" id="myImg" src="images/shopfront.png" alt="coffe beans "
                         style="width:800px;height:400px;" class="shadow p-3 mb-5 bg-white rounded" class="img-thumbnail"
                         ,>
-                    <h2> Our home </h2>
+                    <h1 style="text-align: center"> Our home </h1>
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -85,23 +96,26 @@
                 </div>
                 <div class="col-md-6">
 
-                    <img class="myImages" id="myImg" src="imgs/1959.png" alt="Here are the founders of McHugh's "
+                    <img class="myImages" id="myImg" src="images/1959.png" alt="coffe beans "
                         style="width:800px;height:400px;" class="shadow p-3 mb-5 bg-white rounded" class="img-thumbnail"
                         ,>
-                    <h2> EST.1959 </h2>
+                    <h1 style="text-align: center"> EST.1959 </h1>
                     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
+
+
+                <div class="line"></div>
 
                 <div class="row">
                     <div class="col-md-6">
-                        <img class="myImages" id="myImg" src="imgs/coloumbia beans.png" alt="Example of some of our coffee beans "
+                        <img class="myImages" id="myImg" src="images/coloumbia beans.png" alt="coffe beans "
                             style="width:800px;height:400px;" class="shadow p-3 mb-5 bg-white rounded"
                             class="img-thumbnail" ,>
-                        <h2> The Coffee Pod </h2>
+                        <h1 style="text-align: center"> the coffee pod </h1>
                         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -110,10 +124,10 @@
                     </div>
                     <div class="col-md-6">
 
-                        <img class="myImages" id="myImg" src="imgs/our cooking book.png" alt="We pay great attention to our customers review's "
+                        <img class="myImages" id="myImg" src="images/our cooking book.png" alt="coffe beans "
                             style="width:800px;height:400px;" class="shadow p-3 mb-5 bg-white rounded"
                             class="img-thumbnail" ,>
-                        <h2> Our Reviews</h2>
+                        <h1 style="text-align: center"> Our reviews</h1>
                         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -128,7 +142,9 @@
                     <img class="modal-content" id="img01">
                     <div id="caption"></div>
                 </div>
-
+                <footer class="container text-center">
+                    <p>&copy; group 5 </p>
+                </footer>
 
                 <!-- jQuery CDN - Slim version (=without AJAX) -->
                 <!--- code from https://bootstrapious.com/p/bootstrap-sidebar --->
@@ -179,27 +195,8 @@
                         modal.style.display = "none";
                     }
                 </script>
-
-                <!--- all imagess from https://unsplash.com/ --->
-                <footer >
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="line">
-                                <hr/>
-                            </div>
-                            <div class="col-12">Sitemap</div>
-                            <div class="col-12"><a  href="index.html">Home</a></div>
-                            <div class="col-12"><a  href="contactInfo.html">Contact</a></div>
-                            <div class="col-12"><a  href="location.html">Location</a></div>
-                            <div class="col-12"><a  href="index.php">Shop</a></div>
-                            <div class="col-12"><a  href="about.html">About</a></div>
-                            <div class="col-12">© Group 5</div>
-                            <div class="line">
-                                <hr/>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
+                <!--- code from https://bootstrapious.com/p/bootstrap-sidebar --->
+                <!--- all imagess from https://unsplash.com/ this is the javascript to be able to toggole the side bar --->
 </body>
 
 </html>
