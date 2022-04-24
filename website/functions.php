@@ -1,7 +1,7 @@
 <!-- guide for cart system from https://codeshack.io/shopping-cart-system-php-mysql/ -->
 <?php
 function pdo_connect_mysql() {
-    // Update the details below with your MySQL details
+    //   MySQL details
     $DATABASE_HOST = 'localhost';
     $DATABASE_USER = 'root';
     $DATABASE_PASS = 'password';

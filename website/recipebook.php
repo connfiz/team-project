@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html>
+<?php  ?>
+
 
 <head>
-  <title>McHugh's Coffee Pod</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="icon" href="logo.png">
-
-
-
-
-  <!-- Bootstrap CSS CDN -->
-  <!--- code from https://bootstrapious.com/p/bootstrap-sidebar --->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
     integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="style.css">
+
+
+
 </head>
 
-<body>
-  <div class="wrapper">
+<div class="wrapper">
     <!-- Sidebar  -->
     <!--- code from https://bootstrapious.com/p/bootstrap-sidebar this is to name the diffrent tabs in the side bar and to add the logo  --->
     <nav id="sidebar">
@@ -52,10 +48,6 @@
 
         <li>
           <a href="contactInfo.html">Contact</a>
-        </li>
-
-        <li>
-          <a href="recipebook.php">recipes</a>
         </li>
 
       </ul>
@@ -104,44 +96,25 @@
         document.getElementById("demo").innerHTML = text;
       }
       </script>
-      <h1>McHugh's Coffee Pod </h1>
 
-        <div class="shopfront">
-          <img class="myimgs" id="myImg" src="imgs/shopfront.png" alt="shopfront" style="width:800px;height:400px;"
-            class="shadow p-3 mb-5 bg-white rounded" class="img-thumbnail">
 
-        </div>
 
-        <h2> About us </h2>
-        </br>
-        <p>McHughs coffee pod is a family owned business based in western Ireland whose goal is to provide coffee lovers a portable coffee vending service
-           which would be able to visit different venues and festivals which would be in need of our service.
-           McHughs initially began In 1952 when Peter McHugh saw an opening at animals shops and fairs and chose to set up a voyaging container selling hot cups of tea and newly made sandwiches to the ranchers who assembled around.
-           Beginning around 1985 Peter and his significant other Frances McHugh have been running McHughs and have acquired a priceless standing all over the area serving quite hot cups of free tea and very new specially made sandwiches to ranchers, dealers and passers by hoping to fuel up for the afternoon.</p>
-        </br>
+<h1> <span>  This is a recipe book</h1> <span> <br>
 
-        </br>
-        <div class="imgs">
-          <img class="center" id="myImg" src="imgs/coloumbia beans.png" alt="coffe beans "
-            style="width:800px;height:400px;" class="shadow p-3 mb-5 bg-white rounded" class="img-thumbnail" ,>
-        </div>
-        </br>
-        <h2> Our shop </h2>
-        <p>In our shop we will be selling numerous coffee beans to our customers and providing a homemade cooking book to help you with your coffee creating endeavours.
-          Our mission is to provide our amazing products to anybody, no matter where you are in Ireland..</p>
+    <img class = "center" src ="imgs/our cooking book.png" alt= cookbook>
 
-        <div class="line"></div>
-        </br>
-        <div class="imgs">
-          <img class="center" id="myImg" src="imgs/mission.png" alt="community" style="width:800px;height:400px;"
-            class="shadow p-3 mb-5 bg-white rounded" class="img-thumbnail">
-        </div>
-        </br>
-        <h2> Location </h2>
-        <p>McHughs has multiple locations that you can find us located at. We can be booked for numerous amount of festivals and venues across Ireland.
-          You can check which locations we will be at by observing the calender listed above.</p>
 
-        <div class="line"></div>
+    <div id="canvas" class="container group">
+
+
+    <div id="primaryContent" class="group">
+
+    <p>Click the button below to load the recipes.</p>
+    <button class ="center" id="recipe"> recipe </button>
+    <div id="update"></div>
+
+       <script src="recipe.js"></script>
+       <div class="line"></div>
         <div id="myModal" class="modal">
           <!--- code from https://stackoverflow.com/questions/47798971/several-modal-imgs-on-page --->
           <span class="close">&times;</span>
@@ -217,9 +190,8 @@
             <div class="col-12"><a  href="index.html">Home</a></div>
             <div class="col-12"><a  href="contactInfo.html">Contact</a></div>
             <div class="col-12"><a  href="location.html">Location</a></div>
-            <div class="col-12"><a  href="index.php">Shop</a></div>
+            <div class="col-12"><a  href="shop.html">Shop</a></div>
             <div class="col-12"><a  href="about.html">About</a></div>
-            <div class="col-12"><a  href="recipebook.php">recipes</a></div>
             <div class="col-12">© Group 5</div>
             <div class="line">
                 <hr/>
@@ -228,4 +200,8 @@
     </div>
 </footer>
 
+
+
+
+<?php  ?>
 </html>

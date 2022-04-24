@@ -1,0 +1,14 @@
+{
+    "name": "connd/website",
+    "autoload": {
+        "psr-4": {
+            "Connd\\Website\\": "src/"
+        }
+    },
+    "require": {},
+    "config": {
+        "platform": {
+            "php": "5.6.40"
+        }
+    }
+}
